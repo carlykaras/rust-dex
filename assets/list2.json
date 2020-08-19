@@ -1,0 +1,15 @@
+[
+    {
+        "name": "pikachu",
+        "types": ["electric", "none"],
+        "locations": ["route-4", "rolling-fields"],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    },
+
+    {
+        "name": "pumpkaboo",
+        "types": ["grass", "ghost"],
+        "locations": ["route-4", "giants-mirror"],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png"
+    }
+]
