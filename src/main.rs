@@ -78,7 +78,7 @@ fn main() {
     println!("{}", format!("{:#?}", pkmn));
     rocket::ignite()
         .mount("/pokemon", routes![findpok])
-        .mount("/location", routes![getmon])
+        .mount("/locations", routes![getmon])
         .mount("/", StaticFiles::from(concat!(env!("CARGO_MANIFEST_DIR"), "/public")))
         .launch();
 }
