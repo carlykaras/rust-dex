@@ -3,13 +3,23 @@
         "name": "pikachu",
         "types": ["electric", "none"],
         "locations": ["route-4", "rolling-fields"],
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "shiny-sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/25.png",
+        "abilities": ["static"],
+        "hidden-ability": ["lightning-rod"],
+        "egg-groups": ["field", "fairy"],
+        "evs": [2, "speed"]
     },
 
     {
         "name": "pumpkaboo",
         "types": ["grass", "ghost"],
         "locations": ["route-4", "giants-mirror"],
-        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png"
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png",
+        "shiny-sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/710.png",
+        "abilities": ["pickup", "frisk"],
+        "hidden-ability": ["insomnia"],
+        "egg-groups": ["amorphous"],
+        "evs": [1, "defense"]
     }
 ]

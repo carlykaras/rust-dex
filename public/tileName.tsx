@@ -1,6 +1,4 @@
 'use strict';
-const f = React.createElement;
-var jjname = Object;
 /*
 var newname = undefined;
 
@@ -20,11 +18,7 @@ function getName() {
 }
 */
 
-class PkmnNameTile extends React.Component{
-
-    constructor(props) {
-        super(props);
-    }
+export class PkmnNameTile extends React.Component{
 
     componentDidMount(){
         console.log("Mounting");
@@ -38,25 +32,19 @@ class PkmnNameTile extends React.Component{
         return fetch(url)
             .then(response => {
                 //testname.json().then(data => console.log(data.name));  
-                response.json().then(data => {
+                testname.json().then(data => {
                     console.log(data.name);
-                    jjname = data.name;
-                    console.log(jjname);
-                    return jjname;
+                    testname = data.name;
+                    console.log(testname);
+                    return testname;
                     //var pokename = document.createElement('p');
                 })
             })     
     }
     
     render() {
-        
-        return f(
-            'button',
-            { onClick: () => {return null}},
-            'Name: ' + this.jjname,
-            console.log(jjname)
-
-            //console.log(testname.name)
+        return (
+            console.log(this.testname.name)
             // <p>
             //     {this.fetchData().name}
             // </p>
@@ -85,8 +73,9 @@ return fetch(new Request("/pokemon/pikachu"))
     */
 }
 
-//export default PkmnNameTile;
-ReactDOM.render(f(PkmnNameTile), document.getElementById('poke_name'));
+export default PkmnNameTile;
+//ReactDOM.render(PkmnNameTile, document.getElementById('poke_name'));
+
 /*
 
 */
