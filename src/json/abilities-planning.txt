@@ -1,0 +1,34 @@
+Get database set up
+Run test queries
+Connect server to your app
+Have the app submit queries (prepared statements)
+App isn't reading from JSON so you can test it in the UI
+
+abilities-planning
+---------
+id  name    description
+1   static  "Blah blah"
+2   pickup  ""
+3   frisk   ""
+4   insomnia    ""
+5   lightning-rod ""
+
+pokemon
+-------
+id  number  name    ability1    ability2  hiddenability
+1   25      pikachu 1           null      5
+2   710     pumpkaboo   2       3         4
+
+moveset
+-------
+id  pokemon level   move
+1   1       4       1
+2   1       6       2
+3   2       5       3
+4   2       7       4
+
+moves
+-----
+id  name    description     type    power   accuracy
+
+

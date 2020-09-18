@@ -44,7 +44,7 @@ fn read_loc<'p>(input_location: String, P: &'p Vec<PokData>) -> Vec<&'p PokData>
 
 #[get("/<locname>")]
 fn getmon(locname: String) -> String {
-    let pkmn = read_pok_from_file("json/list2.json").unwrap();
+    let pkmn = read_pok_from_file("src/json/list2.json").unwrap();
     let pokloc = read_loc(locname, &pkmn);
 
     // This actually prints the JSON on the page
@@ -53,12 +53,11 @@ fn getmon(locname: String) -> String {
     } else {
         String::from("{}")
     }
-
 }
 
 #[get("/<pokname>")]
 fn findpok(pokname: String) -> String {
-    let pkmn = read_pok_from_file("json/list2.json").unwrap();
+    let pkmn = read_pok_from_file("src/json/list2.json").unwrap();
     // Searches for the pokemon by name that you entered
     let i = pkmn.binary_search_by(|p| p.name.cmp(&pokname)).unwrap_or(9999);
     // Error handling
@@ -74,8 +73,8 @@ fn findpok(pokname: String) -> String {
 }
 
 fn main() {
-    let pkmn = read_pok_from_file("json/list2.json").unwrap();
-    println!("{}", format!("{:#?}", pkmn));
+    let pkmnlist = read_pok_from_file("src/json/list2.json").unwrap(); 
+    println!("{}", format!("{:#?}", pkmnlist));
     rocket::ignite()
         .mount("/pokemon", routes![findpok])
         .mount("/locations", routes![getmon])

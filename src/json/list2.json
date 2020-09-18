@@ -1,7 +1,7 @@
 [
     {
         "name": "pikachu",
-        "types": ["electric", "none"],
+        "types": ["electric"],
         "locations": ["route-4", "rolling-fields"],
         "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
         "shiny-sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/25.png",

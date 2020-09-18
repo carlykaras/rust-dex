@@ -1,0 +1,5 @@
+{
+    "static" : "The Pokémon is charged with static electricity, so contact with it may cause paralysis.",
+    "pickup" : "The Pokémon may pick up the item an opposing Pokémon used during a battle. It may pick up items outside of battle, too.",
+    "frisk" : "When it enters a battle, the Pokémon can check an opposing Pokémon's held item."
+}
